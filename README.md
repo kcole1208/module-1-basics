@@ -1,24 +1,10 @@
-lecture-01 <img src="https://slu-soc5650.github.io/images/logo.png" align="right" />
+lecture-02 <img src="https://slu-soc5650.github.io/images/logo.png" align="right" />
 ===========================================================
-[![](https://img.shields.io/badge/semester-spring%202019-blue.svg)](https://github.com/slu-soc5650/lecture-01)
-[![](https://img.shields.io/badge/release-lecture-green.svg)](https://github.com/slu-soc5650/lecture-01)
-[![](https://img.shields.io/github/release/slu-soc5650/lecture-01.svg?label=version)](https://github.com/slu-soc5650/lecture-01/releases)
-[![](https://img.shields.io/github/last-commit/slu-soc5650/lecture-01.svg)](https://github.com/slu-soc5650/lecture-01/commits/master)
-[![](https://img.shields.io/github/repo-size/slu-soc5650/lecture-01.svg)](https://github.com/slu-soc5650/lecture-01)
-
-### Software Installations
-This lecture assumes the following software is installed and available:
-
-```r
-install.packages(c("here", "leaflet", "sf", "tidyverse", "usethis"))
-```
-
-### Access Lecture
-Students in my course should clone this repository into their course folder system. Others can quickly download this lecture to their `Desktop` using `usethis`:
-
-```r
-usethis::use_course("https://github.com/slu-soc5650/lecture-01/archive/master.zip")
-```
+[![](https://img.shields.io/badge/semester-spring%202019-blue.svg)](https://github.com/slu-soc5650/lecture-02)
+[![](https://img.shields.io/badge/release-lecture-green.svg)](https://github.com/slu-soc5650/lecture-02)
+[![](https://img.shields.io/github/release/slu-soc5650/lecture-02.svg?label=version)](https://github.com/slu-soc5650/lecture-02/releases)
+[![](https://img.shields.io/github/last-commit/slu-soc5650/lecture-02.svg)](https://github.com/slu-soc5650/lecture-02/commits/master)
+[![](https://img.shields.io/github/repo-size/slu-soc5650/lecture-02.svg)](https://github.com/slu-soc5650/lecture-02)
 
 ### Support and Feedback
 Students currently enrolled in this course should seek assistance on Slack and/or during in-person office hours before posting questions or reporting possible bugs. Others should see my general policy on [support](.github/SUPPORT.md). If you have found a typo or have a suggestion, please check the [contribution guidelines](.github/CONTRIBUTING.md) guidelines before opening an issue. Please note that contributions to this project are governed by a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md) and, for Saint Louis University community members, our various University policies.
