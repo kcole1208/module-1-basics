@@ -70,8 +70,8 @@ rm(mo_total, mo_black)
 
 # write data ####
 
-st_write(cali, "data/CA_DEMOS_Total_Population/CA_DEMOS_Total_Population.shp")
-st_write(mo, "data/CA_DEMOS_Total_Population/CA_DEMOS_Total_Population.geojson")
+st_write(cali, "data/CA_DEMOS_Total_Population/CA_DEMOS_Total_Population.shp", delete_dsn = TRUE)
+st_write(mo, "data/MO_DEMOS_Black_Population/MO_DEMOS_Black_Population.geojson", delete_dsn = TRUE)
 
 #===# #===# #===# #===# #===# #===# #===# #===# #===# #===# #===# #===# #===# #===#
 
