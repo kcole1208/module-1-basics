@@ -59,7 +59,20 @@ mo <- st_read(here("data", "MO_DEMOS_Black_Population", "MO_DEMOS_Black_Populati
 
 We’re now ready to map these data.
 
-## Map
+## Part 1 - Exploration
+
+We’ll use the `mapview()` function to explore these data:
+
+``` r
+mapview(mo)
+```
+
+![](lab-02-replication_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+
+We can see that our data line-up with the basemap (always a good sign!)
+and that they have a number of possible columns for mapping.
+
+## Part 2 - Mapping
 
 In order to map the Black population in Missouri correctly, we need to
 decide on how we want to normalize our map. We have three column choices
