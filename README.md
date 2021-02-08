@@ -7,7 +7,7 @@ module-1-basics <img src="https://slu-soc5650.github.io/images/icon_hu137d436a85
 [![](https://img.shields.io/github/repo-size/slu-soc5650/module-1-basics.svg)](https://github.com/slu-soc5650/module-1-basics)
 
 ## Module 1 - Course Introduction
-These materials correspond to the opening lecture of SOC 4650 and SOC 5650.
+These materials correspond to the second course meeting of SOC 4650 and SOC 5650.
 
 ## Lesson Quick Start
 ### Install Software
