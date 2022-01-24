@@ -1,7 +1,7 @@
 Meeting-02 Meeting Notebook - Complete
 ================
 Christopher Prener, Ph.D.
-(February 08, 2021)
+(January 24, 2022)
 
 ## Introduction
 
@@ -17,22 +17,17 @@ library(ggplot2)       # static mapping
 
 # mapping packages
 library(mapview)      # preview spatial data
-```
-
-    ## GDAL version >= 3.1.0 | setting mapviewOptions(fgb = TRUE)
-
-``` r
 library(sf)           # spatial tools
 ```
 
-    ## Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+    ## Linking to GEOS 3.8.1, GDAL 3.2.1, PROJ 7.2.1; sf_use_s2() is TRUE
 
 ``` r
 # other packages
 library(here)         # file path management
 ```
 
-    ## here() starts at /Users/chris/GitHub/slu-soc5650/content/module-1-basics
+    ## here() starts at /Users/prenercg/GitHub/slu-soc5650/meetings/module-1-basics
 
 ``` r
 library(viridis)      # viridis color palettes
@@ -50,12 +45,14 @@ the 2010 Decennial Census for California. These can be found in
 cali <- st_read(here("data", "CA_DEMOS_Total_Population", "CA_DEMOS_Total_Population.shp"))
 ```
 
-    ## Reading layer `CA_DEMOS_Total_Population' from data source `/Users/chris/GitHub/slu-soc5650/content/module-1-basics/data/CA_DEMOS_Total_Population/CA_DEMOS_Total_Population.shp' using driver `ESRI Shapefile'
+    ## Reading layer `CA_DEMOS_Total_Population' from data source 
+    ##   `/Users/prenercg/GitHub/slu-soc5650/meetings/module-1-basics/data/CA_DEMOS_Total_Population/CA_DEMOS_Total_Population.shp' 
+    ##   using driver `ESRI Shapefile'
     ## Simple feature collection with 58 features and 5 fields
-    ## geometry type:  MULTIPOLYGON
-    ## dimension:      XY
-    ## bbox:           xmin: -373976.1 ymin: -604512.6 xmax: 539719.6 ymax: 450022.5
-    ## projected CRS:  NAD83 / California Albers
+    ## Geometry type: MULTIPOLYGON
+    ## Dimension:     XY
+    ## Bounding box:  xmin: -373976.1 ymin: -604512.6 xmax: 539719.6 ymax: 450022.5
+    ## Projected CRS: NAD83 / California Albers
 
 ## Map 1 - Total Population
 

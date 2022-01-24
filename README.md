@@ -1,6 +1,6 @@
 module-1-basics <img src="https://slu-soc5650.github.io/images/icon_hu137d436a85c84cab921c9c47edaed5ef_12382_192x192_fill_lanczos_center_2.png" align="right" />
 ===========================================================
-[![](https://img.shields.io/badge/semester-spring%2021-blue.svg)](https://github.com/slu-soc5650/module-1-basics)
+[![](https://img.shields.io/badge/semester-spring%2022-blue.svg)](https://github.com/slu-soc5650/module-1-basics)
 [![](https://img.shields.io/badge/release-full-brightgreen.svg)](https://github.com/slu-soc5650/module-1-basics)
 [![](https://img.shields.io/github/release/slu-soc5650/module-1-basics.svg?label=version)](https://github.com/slu-soc5650/module-1-basics/releases)
 [![](https://img.shields.io/github/last-commit/slu-soc5650/module-1-basics.svg)](https://github.com/slu-soc5650/module-1-basics/commits/master)
