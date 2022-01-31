@@ -1,7 +1,7 @@
 Meeting-02 Meeting Notebook - Complete
 ================
 Christopher Prener, Ph.D.
-(January 24, 2022)
+(January 31, 2022)
 
 ## Introduction
 
@@ -14,7 +14,12 @@ This notebook requires the following packages:
 ``` r
 # tidyverse packages
 library(ggplot2)       # static mapping
+```
 
+    ## Warning in register(): Can't find generic `scale_type` in package ggplot2 to
+    ## register S3 method.
+
+``` r
 # mapping packages
 library(mapview)      # preview spatial data
 library(sf)           # spatial tools
@@ -27,7 +32,7 @@ library(sf)           # spatial tools
 library(here)         # file path management
 ```
 
-    ## here() starts at /Users/prenercg/GitHub/slu-soc5650/meetings/module-1-basics
+    ## here() starts at /Users/prenercg/GitHub/slu-soc5650/module-1-basics
 
 ``` r
 library(viridis)      # viridis color palettes
@@ -46,7 +51,7 @@ cali <- st_read(here("data", "CA_DEMOS_Total_Population", "CA_DEMOS_Total_Popula
 ```
 
     ## Reading layer `CA_DEMOS_Total_Population' from data source 
-    ##   `/Users/prenercg/GitHub/slu-soc5650/meetings/module-1-basics/data/CA_DEMOS_Total_Population/CA_DEMOS_Total_Population.shp' 
+    ##   `/Users/prenercg/GitHub/slu-soc5650/module-1-basics/data/CA_DEMOS_Total_Population/CA_DEMOS_Total_Population.shp' 
     ##   using driver `ESRI Shapefile'
     ## Simple feature collection with 58 features and 5 fields
     ## Geometry type: MULTIPOLYGON

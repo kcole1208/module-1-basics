@@ -1,11 +1,11 @@
-Lab-02 Replication
+Lab 1-2 Replication
 ================
 Christopher Prener, Ph.D.
-(February 08, 2021)
+(January 31, 2022)
 
 ## Introduction
 
-This notebook provides a replication of Lab-02.
+This notebook provides a replication of Lab 1-2.
 
 ## Dependencies
 
@@ -14,25 +14,25 @@ This notebook requires the following packages:
 ``` r
 # tidyverse packages
 library(ggplot2)       # static mapping
-
-# mapping packages
-library(mapview)      # preview spatial data
 ```
 
-    ## GDAL version >= 3.1.0 | setting mapviewOptions(fgb = TRUE)
+    ## Warning in register(): Can't find generic `scale_type` in package ggplot2 to
+    ## register S3 method.
 
 ``` r
+# mapping packages
+library(mapview)      # preview spatial data
 library(sf)           # spatial tools
 ```
 
-    ## Linking to GEOS 3.8.1, GDAL 3.1.4, PROJ 6.3.1
+    ## Linking to GEOS 3.8.1, GDAL 3.2.1, PROJ 7.2.1; sf_use_s2() is TRUE
 
 ``` r
 # other packages
 library(here)         # file path management
 ```
 
-    ## here() starts at /Users/chris/GitHub/slu-soc5650/content/module-1-basics/assignments/lab-02-replication
+    ## here() starts at /Users/prenercg/GitHub/slu-soc5650/module-1-basics/assignments/lab-1-2-replication
 
 ``` r
 library(viridis)      # viridis color palettes
@@ -50,12 +50,14 @@ the 2010 Decennial Census for Missouri. These can be found in
 mo <- st_read(here("data", "MO_DEMOS_Black_Population", "MO_DEMOS_Black_Population.geojson"))
 ```
 
-    ## Reading layer `MO_DEMOS_Black_Population' from data source `/Users/chris/GitHub/slu-soc5650/content/module-1-basics/assignments/lab-02-replication/data/MO_DEMOS_Black_Population/MO_DEMOS_Black_Population.geojson' using driver `GeoJSON'
+    ## Reading layer `MO_DEMOS_Black_Population' from data source 
+    ##   `/Users/prenercg/GitHub/slu-soc5650/module-1-basics/assignments/lab-1-2-replication/data/MO_DEMOS_Black_Population/MO_DEMOS_Black_Population.geojson' 
+    ##   using driver `GeoJSON'
     ## Simple feature collection with 115 features and 9 fields
-    ## geometry type:  MULTIPOLYGON
-    ## dimension:      XY
-    ## bbox:           xmin: 265131.4 ymin: 3986650 xmax: 847376.1 ymax: 4496645
-    ## projected CRS:  NAD83 / UTM zone 15N
+    ## Geometry type: MULTIPOLYGON
+    ## Dimension:     XY
+    ## Bounding box:  xmin: 265131.4 ymin: 3986650 xmax: 847376.1 ymax: 4496645
+    ## Projected CRS: NAD83 / UTM zone 15N
 
 We’re now ready to map these data.
 
@@ -67,7 +69,7 @@ We’ll use the `mapview()` function to explore these data:
 mapview(mo)
 ```
 
-![](lab-02-replication_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
+![](lab-1-2-replication_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 We can see that our data line-up with the basemap (always a good sign!)
 and that they have a number of possible columns for mapping.
@@ -100,7 +102,7 @@ p1 <- ggplot() +
 p1
 ```
 
-![](lab-02-replication_files/figure-gfm/map-1-1.png)<!-- -->
+![](lab-1-2-replication_files/figure-gfm/map-1-1.png)<!-- -->
 
 If we map using percent, we see that St. Louis City has the highest
 percent of African American residents. Other counties with relatively

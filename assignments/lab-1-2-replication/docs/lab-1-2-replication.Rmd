@@ -1,5 +1,5 @@
 ---
-title: "Lab-02 Replication"
+title: "Lab 1-2 Replication"
 author: "Christopher Prener, Ph.D."
 date: '(`r format(Sys.time(), "%B %d, %Y")`)'
 output: 
@@ -9,7 +9,7 @@ always_allow_html: yes
 ---
 
 ## Introduction
-This notebook provides a replication of Lab-02.
+This notebook provides a replication of Lab 1-2.
 
 ## Dependencies
 This notebook requires the following packages:
