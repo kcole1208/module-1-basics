@@ -31,7 +31,7 @@ library(viridis)      # viridis color palettes
 The data for today's lecture are county-level population estimates from the 2010 Decennial Census for California. These can be found in `data/CA_DEMOS_Total_Population`. They are shapefile data:
 
 ```{r load-data}
-
+cali <- st_read(here("data", "CA_DEMOS_Total_Population", "CA_DEMOS_Total_Population.shp"))
 ```
 
 ## Map 1 - Total Population
@@ -47,7 +47,16 @@ Notice how we use the `+` sign to chain our functions together. This works rathe
 We've discussed the concept of "layers" already during this meeting. This map has one layer - the county boundaries filled with their total population.
 
 ```{r, map-1}
+p1 <- ggplot() + 
+  geom_sf(data = cali, mapping = aes(fill = total_pop)) +
+  scale_fill_viridis(name = "Total Population") + 
+  labs(
+    title = "Our First Map!",
+    subtitle = "2010 US Census",
+    caption = "Data via U.S Census Bureau"
+  )
 
+p1 
 ```
 
 We've now stored our map in the `p1` object so that we can reference it later. One way we use this is to save it, using the `ggsave()` function:
@@ -68,7 +77,16 @@ The map above is not correct cartographically because it isn't *normalized*. The
 Since mapping density is really the only option for us with these data, we'll go ahead and re-create our map from above, except we'll use the `pop_den` column:
 
 ```{r, map-2}
+p2 <- ggplot() + 
+  geom_sf(data = cali, mapping = aes(fill = pop_den)) +
+  scale_fill_viridis(name = "Density per \nSquare Kilometer") + 
+  labs(
+    title = "Total Population by California County",
+    subtitle = "2010 US Census",
+    caption = "Data via U.S Census Bureau"
+  )
 
+p2 
 ```
 
 We've now stored our map in the `p2` object so that we can reference it later. One way we use this is to save it, using the `ggsave()` function:
