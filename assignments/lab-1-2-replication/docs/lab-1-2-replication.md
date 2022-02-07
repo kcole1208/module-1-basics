@@ -1,7 +1,7 @@
 Lab 1-2 Replication
 ================
-Christopher Prener, Ph.D.
-(January 31, 2022)
+Kathryn Coleman
+(February 07, 2022)
 
 ## Introduction
 
@@ -14,12 +14,7 @@ This notebook requires the following packages:
 ``` r
 # tidyverse packages
 library(ggplot2)       # static mapping
-```
 
-    ## Warning in register(): Can't find generic `scale_type` in package ggplot2 to
-    ## register S3 method.
-
-``` r
 # mapping packages
 library(mapview)      # preview spatial data
 library(sf)           # spatial tools
@@ -32,7 +27,7 @@ library(sf)           # spatial tools
 library(here)         # file path management
 ```
 
-    ## here() starts at /Users/prenercg/GitHub/slu-soc5650/module-1-basics/assignments/lab-1-2-replication
+    ## here() starts at /Users/kcole/Documents/GitHub/module-1-basics/assignments/lab-1-2-replication
 
 ``` r
 library(viridis)      # viridis color palettes
@@ -51,7 +46,7 @@ mo <- st_read(here("data", "MO_DEMOS_Black_Population", "MO_DEMOS_Black_Populati
 ```
 
     ## Reading layer `MO_DEMOS_Black_Population' from data source 
-    ##   `/Users/prenercg/GitHub/slu-soc5650/module-1-basics/assignments/lab-1-2-replication/data/MO_DEMOS_Black_Population/MO_DEMOS_Black_Population.geojson' 
+    ##   `/Users/kcole/Documents/GitHub/module-1-basics/assignments/lab-1-2-replication/data/MO_DEMOS_Black_Population/MO_DEMOS_Black_Population.geojson' 
     ##   using driver `GeoJSON'
     ## Simple feature collection with 115 features and 9 fields
     ## Geometry type: MULTIPOLYGON

@@ -1,6 +1,6 @@
 ---
 title: "Lab 1-2 Replication"
-author: "Christopher Prener, Ph.D."
+author: "Kathryn Coleman"
 date: '(`r format(Sys.time(), "%B %d, %Y")`)'
 output: 
   github_document: default
